@@ -9,12 +9,12 @@
 import UIKit
 
 // Basic App-/WebView-configuration
-let appTitle = "iOS PWA Wrapper"
-let webAppUrl = URL(string: "https://www.leasingrechnen.at")
-let allowedOrigin = "leasingrechnen.at"
+let appTitle = "MyJDownloader"
+let webAppUrl = URL(string: "https://my.jdownloader.org")
+let allowedOrigin = "jdownloader.org"
 let menuButtonTitle = NSLocalizedString("menu", comment: "")
 let menuButtonJavascript = """
-    $('.button-collapse').sideNav('show');
+$('#dropDownMenuButton').click();
 """
 let useUserAgentPostfix = true
 let userAgentPostfix = "iOSApp"
@@ -23,7 +23,7 @@ let customUserAgent = "Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_1 like Mac OS X) 
 
 // UI Settings
 let changeAppTitleToPageTitle = false
-let forceLargeTitle = false
+let forceLargeTitle = true
 
 // change Menu button depending on screen width
 let changeMenuButtonOnWideScreens = false
@@ -35,8 +35,8 @@ let alternateRightButtonJavascript = """
 
 // Colors & Styles
 let useLightStatusBarStyle = true
-let navigationBarColor = getColorFromHex(hex: 0xF44336, alpha: 1.0)
-let navigationTitleColor = getColorFromHex(hex: 0xFFFFFF, alpha: 1.0)
+let navigationBarColor = getColorFromHex(hex: 0x22545c, alpha: 1.0)
+let navigationTitleColor = getColorFromHex(hex: 0x18383f, alpha: 1.0)
 let navigationButtonColor = navigationTitleColor
 let progressBarColor = getColorFromHex(hex: 0x4CAF50, alpha: 1.0)
 let offlineIconColor = UIColor.darkGray
